@@ -53,13 +53,8 @@ Employee.init(
           id: "id"
       }
     },
-    task_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "task",
-        id: "id"
-    }
-    },
+
+    
   },
   {
     hooks: {
