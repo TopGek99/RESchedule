@@ -1,0 +1,16 @@
+[
+    {
+        "first_name": "Patrick",
+        "last_name": "Corrigan",
+        "email": "patrick@email.com",
+        "password": "password1234",
+        "location": "Adelaide"
+    },
+    {
+        "first_name": "Belinda",
+        "last_name": "Pruitt",
+        "email": "belinda@email.com",
+        "password": "password1234",
+        "location": "Melbourne"
+    }
+]
