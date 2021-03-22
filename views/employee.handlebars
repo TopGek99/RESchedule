@@ -1,6 +1,8 @@
 <div class="row">
   <div class="col-auto">
+
     <h2>Welcome, {{first.name}}, {{last.name}} </h2>
+
   </div>
 </div>
 
@@ -10,10 +12,13 @@
     {{#each empTask as |task|}}
     <div class="row mb-2">
       <div class="col-md-8">
+
         <h4><a href="/Task/{{task.id}}">{{task.title}}{{task.time}}</a></h4>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" task="{{task.id}}">OFFER SHIFT</button>
+
+
       </div>
     </div>
     {{/each}}

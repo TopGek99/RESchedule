@@ -7,23 +7,26 @@ const taskData = require('./taskData.json');
 
 const seedDatabase = async () => {
 	await sequelize.sync({ force: true });
+
+	await Manager.bulkCreate(managerData);
+
 	let employeeCount = 0;
 	for (const employee of employeeData) {
 		await Employee.create({
 			...employee,
-			manager_id: employeeCount % 2,
-			task_id: employeeCount,
+			manager_id: (employeeCount % 2) + 1,
 		});
+		employeeCount++;
 	}
-
-	await Manager.bulkCreate(managerData);
 
 	let taskCount = 0;
 	for (const task of taskData) {
 		await Task.create({
 			...task,
-			manager_id: taskCount % 2,
+			manager_id: (taskCount % 2) + 1,
+			employee_id: employeeCount,
 		});
+		taskCount++;
 	}
 
 	process.exit(0);

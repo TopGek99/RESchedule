@@ -21,7 +21,10 @@ Task.init(
 			allowNull: false,
 			defaultValue: DataTypes.NOW,
 		},
-
+		length: {
+			type: DataTypes.FLOAT,
+			allowNull: false,
+		},
 		manager_id: {
 			type: DataTypes.INTEGER,
 			references: {
