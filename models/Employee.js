@@ -42,9 +42,7 @@ Employee.init(
 
 		unavailability: {
 			type: DataTypes.DATE,
-			allowNull: false,
-			primaryKey: true,
-			autoIncrement: true,
+	
 		},
 		manager_id: {
 			type: DataTypes.INTEGER,
