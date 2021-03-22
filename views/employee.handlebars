@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{employee.name}}!</h2>
+  </div>
+</div>
+
+ <div class="col-md-6">
+    <h3>Employee Schedule</h3>
+
+    {{#each empTask as |task|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="//{{artisan.id}}">{{artisan.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{artisan.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
