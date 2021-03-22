@@ -1,0 +1,35 @@
+{
+  "name": "Project_Two",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Job Scheduler</h1> <hr> <img scr = \"https://img.shields.io/badge/license-MIT-brightgreen\"/> <p align=\"center\">     <img src=\"https://img.shields.io/badge/Javascript-yellow\" />     <img src=\"https://img.shields.io/badge/jQuery-blue\"  />     <img src=\"https://img.shields.io/badge/-node.js-green\" />     <img src=\"https://img.shields.io/badge/-inquirer-red\" >      <img src=\"https://img.shields.io/badge/-downloader-blue\" >       <img src=\"https://img.shields.io/badge/-filesystem-yellow\" >     <img src=\"https://img.shields.io/badge/-screencastify-lightgrey\" />     <img src=\"https://img.shields.io/badge/-json-orange\" /> </p>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jarred-Caris/Project_Two.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jarred-Caris/Project_Two/issues"
+  },
+  "homepage": "https://github.com/Jarred-Caris/Project_Two#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "prettier": "^2.2.1",
+    "sequelize": "^6.5.1"
+  }
+}
