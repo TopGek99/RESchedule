@@ -42,7 +42,6 @@ Employee.init(
 
 		unavailability: {
 			type: DataTypes.DATE,
-	
 		},
 		manager_id: {
 			type: DataTypes.INTEGER,
@@ -70,7 +69,7 @@ Employee.init(
 		timestamps: false,
 		freezeTableName: true,
 		underscored: true,
-		modelName: 'user',
+		modelName: 'employee',
 	}
 );
 
