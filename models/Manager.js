@@ -2,13 +2,13 @@ const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
-class Employee extends Model {
+class Manager extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-Employee.init(
+Manager.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -39,27 +39,10 @@ Employee.init(
         len: [8],
       },
     },
-
-    unavailability: {
-      type: DataTypes.DATETIME,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    manager_id: {
-      type: DataTypes.INTEGER,
-      references: {
-          model: "manager",
-          id: "id"
-      }
-    },
-    task_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "task",
-        id: "id"
-    }
-    },
+    location: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
   },
   {
     hooks: {
@@ -83,4 +66,4 @@ Employee.init(
   }
 );
 
-module.exports = Employee;
+module.exports = Manager;
