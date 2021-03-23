@@ -1,6 +1,5 @@
 const router = require('express').Router();
-const { Employee, Manager } = require('../../models')
-const withAuth = require('../../utils/auth')
+const { Employee} = require('../../models')
 
 // change router url path according to font end !!!!
 // To create an employee account, intentionally for signup
