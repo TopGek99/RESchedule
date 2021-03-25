@@ -25,7 +25,7 @@ router.get('/manager', async (req, res) => {
 				},
 				{
 					model: Task,
-					attributes: ['title', 'time', 'length'],
+					attributes: ['title', 'start_time', 'finish_time'],
 				},
 			],
 		});
@@ -52,7 +52,7 @@ router.get('/employee', async (req, res) => {
 			include: [
 				{
 					model: Task,
-					attributes: ['title', 'time', 'length'],
+					attributes: ['title', 'start_time', 'finish_time'],
 				},
 			],
 		});

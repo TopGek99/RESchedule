@@ -15,14 +15,13 @@ Task.init(
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
-
-		time: {
+		start_time: {
 			type: DataTypes.DATE,
 			allowNull: false,
 			defaultValue: DataTypes.NOW,
 		},
-		length: {
-			type: DataTypes.FLOAT,
+		finish_time: {
+			type: DataTypes.DATE,
 			allowNull: false,
 		},
 		manager_id: {
