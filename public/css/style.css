@@ -1,0 +1,47 @@
+body{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.wrapper{
+    background-color:#dacbbe;
+    border-radius: 15%;
+    border-style: groove;
+    border-color:#d4a27c;
+}
+.nav{
+
+}
+.main{
+    
+}
+.app-title{
+
+}
+
+h1{
+    color: #525f48;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+}
+.login-form{
+    background-color: #afcb80;
+
+}
+
+p{
+    font-family: 'Noto Sans', sans-serif
+
+}
+
+
+
+
+
+
+//**font-family: 'Aleo', sans-serif
+font-family: 'Gafata', sans-serif
+font-family: 'Nerko One', sans-serif**//
+
