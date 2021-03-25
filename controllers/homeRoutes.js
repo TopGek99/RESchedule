@@ -43,30 +43,30 @@ router.get('/manager', async (req, res) => {
 });
 
 router.get('/employee', async (req, res) => {
-	// try {
-	if (!req.session.logged_in) {
-		res.redirect('/');
-		return;
+	try {
+		if (!req.session.logged_in) {
+			res.redirect('/');
+			return;
+		}
+		const employeeData = await Employee.findByPk(req.session.employee_id, {
+			include: [
+				{
+					model: Task,
+					attributes: ['title', 'start_time', 'finish_time'],
+				},
+			],
+		});
+
+		const employee = employeeData.get({ plain: true });
+
+		res.status(200);
+		res.render('employee', {
+			...employee,
+			logged_in: req.session.logged_in,
+		});
+	} catch (err) {
+		res.status(500).json(err);
 	}
-	const employeeData = await Employee.findByPk(req.session.employee_id, {
-		include: [
-			{
-				model: Task,
-				attributes: ['title', 'start_time', 'finish_time'],
-			},
-		],
-	});
-
-	const employee = employeeData.get({ plain: true });
-
-	res.status(200).json(employee);
-	// res.render('employee', {
-	// 	...employee,
-	// 	logged_in: req.session.logged_in,
-	// });
-	// } catch (err) {
-	// 	res.status(500).json(err);
-	// }
 });
 
 module.exports = router;
