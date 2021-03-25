@@ -20,6 +20,7 @@ const employeeLoginHandler = async (event) => {
 			document.location.replace('/employee');
 		} else {
 			alert(response.statusText);
+			console.log(response.error);
 		}
 	}
 };
