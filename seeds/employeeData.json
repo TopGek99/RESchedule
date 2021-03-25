@@ -4,27 +4,27 @@
         "last_name": "Calderon",
         "email": "sumaiyah@email.com",
         "password": "password1234",
-        "unavailibility": []
+        "availability": 30
     },
     {
         "first_name": "Stacey",
         "last_name": "Searle",
         "email": "stacey@email.com",
         "password": "password1234",
-        "unavailibility": []
+        "availability": 24
     },
     {
         "first_name": "Barbara",
         "last_name": "Conley",
         "email": "barbara@email.com",
         "password": "password1234",
-        "unavailibility": []
+        "availability": 18
     },
     {
         "first_name": "Iwan",
         "last_name": "Zavala",
         "email": "iwan@email.com",
         "password": "password1234",
-        "unavailibility": []
+        "availability": 26
     }
 ]
