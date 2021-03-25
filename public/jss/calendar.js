@@ -1,5 +1,5 @@
 // Initialize all input of date type.
-const calendars = bulmaCalendar.attach('[type="date"]', options);
+const calendars = bulmaCalendar.attach('[type="datetime"]', options);
 
 // Loop on each calendar initialized
 calendars.forEach(calendar => {
@@ -9,11 +9,12 @@ calendars.forEach(calendar => {
 	});
 });
 
+
 // To access to bulmaCalendar instance of an element
 const element = document.querySelector('#my-element');
 if (element) {
 	// bulmaCalendar instance is available as element.bulmaCalendar
-	element.bulmaCalendar.on('select', datepicker => {
-		console.log(datepicker.data.value());
+	element.bulmaCalendar.on('select', datetimepicker => {
+		console.log(datetimepicker.data.value());
 	});
 }
