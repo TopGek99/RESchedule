@@ -14,9 +14,35 @@
     <form class="form employee-form">
       <div class="form-group">
         <label for="employee_form">Employee Availability:</label>
+        <input class="form-input" type="text" id= 'email'
+        name="email" />
         <input class="form-input" type="text" id= 'first_name'
-        name="last_name" />
-        <input type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false">
+        name="first_name" />
+        <input class="form-input" type="text" id= 'last_name'
+        name="last_name"/>
+        <div class = "calendar">
+          <div class = "calendar-header">
+            <div class = "calendar-date">Monday</div>
+            <div class ="calendar-date">Tuesday</div>
+            <div class = "calendar-date">Wednesday</div>
+            <div class = "calendar-date">Thursday</div>
+            <div class = "calendar-date">Friday</div>
+            <div class = "calendar-body">
+              <div class = "calendar-date is disabled"><button class = "date-item">29</div>
+              <div class = "calendar-date is disabled"><button class = "date-item">30</div>
+              <div class = "calendar-date is disabled"><button class = "date-item">31</div>
+              <div class = "calendar-date is disabled"><button class = "date-item">1</div>
+              <div class = "calendar-date is disabled"><button class = "date-item">2</div>
+              <div class="calendar-date"><button class = "date-item">29</div>
+              <div class = "calendar-date"><button class = "date-item">30</div>
+              <div class = "calendar-date "><button class = "date-item">31</div>
+              <div class = "calendar-date "><button class = "date-item">1</div>
+              <div class = "calendar-date "><button class = "date-item">2</div>
+            </div>
+            </div>
+          </div>
+        <input type="datetime" data-display-mode="inline" data-is-range="true" data-close-on-select="false">
+        </div>
        {{! can set the following --startDate , endDate, startTime, endTime --}}
       </div>
       

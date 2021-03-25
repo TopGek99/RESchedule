@@ -2,7 +2,7 @@
   <div class="col-auto">
     <h2>Welcome,  
       {{#with Manager}}
-      {{first-name}}{{last-name}}
+      {{first_name}}{{last_name}}
       {{/with}} </h2>
   </div>
 </div>
@@ -12,9 +12,11 @@
 
     {{#each employee as |employee|}}
     <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/Employee/{{employee.id}}">{{unavailability}}{{task.id}}</a></h4>
-      </div>
+      <ul class = "employee_list">
+       {{#each Employee}}
+       <li>{{this}}</li>
+       {{/each}}
+   </ul>
       <div class="col-md-4">
         
     </div>
