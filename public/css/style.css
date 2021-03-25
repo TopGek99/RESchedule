@@ -8,11 +8,12 @@ body{
     background-color: #d4a27c;
     margin: 0 auto;
 }
+/*Banner at top of page */
 .wrapper{
    background-image: url('../images/background.jpg');
    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
     max-height: auto;
     max-width: auto;
     margin: 10px;
@@ -21,10 +22,18 @@ body{
     font-size: 48px;
    
 }
+/*Nav similar to commented out below */
 .nav{
     background-color: #d4a27c;
+    /*.top-bar,.top-bar-right,.top-bar-left, .menu{
+    color:#39373b;
+    font-size: 16px;
+    font-family: 'Nova Cut',sans-serif;*/
+   
+}
 
 }
+/*Start of style for main section of website*/
 .main{
     padding: 0%;
     margin: auto;
@@ -33,6 +42,20 @@ body{
     border-style: groove;
     border-color:#d4a27c;
     
+}
+/*Start of style settings for login cards*/
+.card{
+    width: 20rem;
+    display: flexbox;
+    padding: 5px;
+    margin-top:5px;
+    background-color:#d4a27c;
+    border-radius: 10px;
+    border-color:#afcb80;
+    position: relative;
+    border-style: groove;
+    border-width: 3px;
+
 }
 
 
@@ -55,6 +78,26 @@ header{
 .login-form{
     background-color: #afcb80;
 
+}
+.h1{
+    padding-top: 15px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 58px;
+    
+}
+.h2{
+    padding-top: 15px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 48px;
+    color:#f0eeee;
+    
+}
+.h3{
+    padding-top: 10px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 30px;
+    color:#f0eeee;
+    
 }
 
 p{
