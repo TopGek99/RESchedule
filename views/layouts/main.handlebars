@@ -15,15 +15,18 @@
 <body>
     <div class="wrapper">
         <header class="hero">
+            <h1 class = 'app-title'></h1>
             <div>
                 <nav class"nav">
                     <a class="link" href="/">Home</a>
                     <a class="link" href="/">Work Schedule</a>
                     <a class="link" href="/employee">Employee Login</a>
                     {{#if logged_in}}
-                    <a class="link" href="" id="employee-logout">Logout</a>
+                    <a class="link" href="" id="employee_logout"> Employee Logout</a>
                     {{else}}
                     <a class="link" href="/manager">Manager Login</a>
+                     {{#if logged_in}}
+                    <a class="link" href="" id="manager_logout"> Manager Logout</a>
                     {{/if}}
                 </nav>
             </div>
