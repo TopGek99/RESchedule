@@ -1,6 +1,6 @@
 // Initialize all input of date type.
-const calendars = bulmaCalendar.attach('[type="date"]', options);
-
+const calendars = bulmaCalendar.attach('[type="date"]',{});
+console.log(calendars)
 // Loop on each calendar initialized
 calendars.forEach(calendar => {
 	// Add listener to select event
