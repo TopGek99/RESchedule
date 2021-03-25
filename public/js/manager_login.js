@@ -22,5 +22,5 @@ const managerLoginHandler = async (event) => {
 };
 
 document
-	.querySelector('.login-form')
+	.querySelector('#manager-login')
 	.addEventListener('submit', managerLoginHandler);
