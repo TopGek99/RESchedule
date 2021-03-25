@@ -1,6 +1,9 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{first-name}}{{last-name</h2>
+    <h2>Welcome, 
+      {{#with Employee}}
+      {{first-name}}{{last-name}}
+      {{/with}}</h2>
   </div>
 </div>
 

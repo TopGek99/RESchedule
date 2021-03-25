@@ -1,10 +1,14 @@
 {{#if employee.length}}
 <section>
     <h2> Assigned Task</h2>
+    <ul>
     {{#each task as |task|}}
+    <li>
     {{task.title}}, {{task.time}}
+    </li>
     {{/each}}
+    </ul>
 </section>
 {{/if}}
-<button type ="submit" class = 'btn'><a class ="link" href = "/artboard/new">+ New Post</a></button>
+<button type ="submit" class = 'btn'><a class ="link" href = "">+ New Post</a></button>
 <script src = '../public/jss/employee.js'></script>
