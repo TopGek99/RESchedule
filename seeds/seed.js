@@ -10,24 +10,9 @@ const seedDatabase = async () => {
 
 	await Manager.bulkCreate(managerData);
 
-	let employeeCount = 0;
-	for (const employee of employeeData) {
-		await Employee.create({
-			...employee,
-			manager_id: (employeeCount % 2) + 1,
-		});
-		employeeCount++;
-	}
+	await Employee.bulkCreate(employeeData);
 
-	let taskCount = 0;
-	for (const task of taskData) {
-		await Task.create({
-			...task,
-			manager_id: (taskCount % 2) + 1,
-			employee_id: employeeCount,
-		});
-		taskCount++;
-	}
+	await Task.bulkCreate(taskData);
 
 	process.exit(0);
 };

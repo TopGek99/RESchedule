@@ -4,27 +4,31 @@
         "last_name": "Calderon",
         "email": "sumaiyah@email.com",
         "password": "password1234",
-        "availability": 30
+        "availability": 30,
+        "manager_id": 1
     },
     {
         "first_name": "Stacey",
         "last_name": "Searle",
         "email": "stacey@email.com",
         "password": "password1234",
-        "availability": 24
+        "availability": 24,
+        "manager_id": 1
     },
     {
         "first_name": "Barbara",
         "last_name": "Conley",
         "email": "barbara@email.com",
         "password": "password1234",
-        "availability": 18
+        "availability": 18,
+        "manager_id": 2
     },
     {
         "first_name": "Iwan",
         "last_name": "Zavala",
         "email": "iwan@email.com",
         "password": "password1234",
-        "availability": 26
+        "availability": 26,
+        "manager_id": 2
     }
 ]
