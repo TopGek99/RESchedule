@@ -11,10 +11,22 @@ html{
     background-position: center;
     height: 400px;
     max-width: auto;
-    margin: 10px;
-    padding: 20px;
+    margin: 5px;
+    padding: 10px;
+    
   
 } 
+.row{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.container{
+    padding: 0 auto;
+    display: flexbox;
+    margin-bottom:10px;
+    margin-top:10px;
+}
 .app-title{
    
     color: rgb(255, 255, 255);
