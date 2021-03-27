@@ -19,6 +19,7 @@ html{
    
     color: rgb(255, 255, 255);
     padding: 10px;
+    margin-inline: 200px;
 }  
 /*Nav similar to commented out below */
 .nav{
@@ -71,8 +72,10 @@ html{
 
 span.fancy{
     color: #afcb80;
-    font-family: 'Alex Brush', sans-serif;
+    font-family: 'Alex Brush', 'sans-serif';
     font-size: 60px;
+    text-align: center;
+    
 }
 .link{
     font-family: 'Quantico', sans-serif;
@@ -107,16 +110,25 @@ header{
     
 }
 .h2{
-    padding-top: 15px;
-    font-family:'Noto Sans', sans-serif;
-    font-size: 48px;
-    color:#f0eeee;
-    
-}
-.h3{
     padding-top: 10px;
     font-family:'Noto Sans', sans-serif;
-    font-size: 30px;
+    font-size: 20 px;
+    color:#f0eeee;
+   
+    
+}
+.h1-centre{ 
+    padding-top: 10px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 45px;
+    color:#f0eeee;
+    text-align: center;
+
+}
+.h3{
+    padding-top: 15px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 16px;
     color:#f0eeee;
     
 }
