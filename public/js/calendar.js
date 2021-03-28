@@ -1,6 +1,21 @@
 // Initialize all input of date type.
-const calendars = bulmaCalendar.attach('[type="datetime"]',{});
-console.log(calendars)
+const options = {
+	color: 'primary',
+	type: 'datetime',
+	startDate:'03-29-2021',
+	endDate:'04-05-2021',
+	dateFormat: 'DD-MM-YYYY',
+	startTime: '09:00',
+	endTime: '17:00',
+	timeFormat: 'HH:mm A',
+	displayMode: 'inline',
+	lang: 'en',
+	isRange: 'true',
+	allowSameDayRange: 'true',
+	toggleOnInputClick: 'true',
+};
+const calendars = bulmaCalendar.attach('#calendar', options);
+console.log(calendars);
 // Loop on each calendar initialized
 calendars.forEach(calendar => {
 	// Add listener to select event
@@ -17,5 +32,5 @@ if (element) {
 		console.log(datepicker.data.value());
 		console.log(element.bulmaCalendar);
 	});
-	element.bulmaCalendar.show();
+	
 }
