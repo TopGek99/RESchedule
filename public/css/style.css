@@ -149,8 +149,9 @@ header{
 }
 
 p{
-    font-family: 'Noto Sans', sans-serif
-
+    font-family: 'Noto Sans', 'sans-serif';
+    font-size: 12px;
+    color:#faf6f6;
 }
 
 .day   {

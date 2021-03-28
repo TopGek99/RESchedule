@@ -36,7 +36,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 
 app.use(routes);
+<<<<<<< Updated upstream
 //app.use(bulmaCalendar);
+=======
+app.use(bulmaCalendar);
+console.log(bulmaCalendar);
+>>>>>>> Stashed changes
 
 sequelize.sync({ force: false }).then(() => {
 	app.listen(PORT, () => console.log('Now listening'));
