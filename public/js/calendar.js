@@ -13,8 +13,8 @@ const options = {
 	isRange: 'true',
 	allowSameDayRange: 'true',
 	toggleOnInputClick: 'true',
-};
-const calendars = bulmaCalendar.attach('#calendar', options);
+}
+const calendars = bulmaCalendar.attach('[type = "datetime"]', options);
 console.log(calendars);
 // Loop on each calendar initialized
 calendars.forEach(calendar => {
