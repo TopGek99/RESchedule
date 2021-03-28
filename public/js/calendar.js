@@ -28,9 +28,9 @@ calendars.forEach(calendar => {
 const element = document.querySelector('#calendar');
 if (element) {
 	// bulmaCalendar instance is available as element.bulmaCalendar
-	element.bulmaCalendar.on('select', datepicker => {
-		console.log(datepicker.data.value());
-		console.log(element.bulmaCalendar);
+	element.bulmaCalendar.on('select', (datepicker, timepicker) => {
+		console.log(datepicker.data.value(startDate, endDate));
+		console.log(timepicker.data.value(startTime, endTime));
 	});
 	
 }
