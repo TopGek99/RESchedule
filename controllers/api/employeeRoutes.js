@@ -1,9 +1,7 @@
 const router = require('express').Router();
 const { Employee } = require('../../models');
 
-// change router url path according to font end !!!!
-// To create an employee account, intentionally for signup
-
+//signup
 router.post('/', async (req, res) => {
 	try {
 		const employeeData = await Employee.create(req.body);

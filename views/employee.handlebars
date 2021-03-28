@@ -58,10 +58,10 @@
     </div>
     </form>
 </div>
-{{#if task.length}}
+{{#if tasks.length}}
 <div class="col-md-6 project-list">
     <h2 class = "h2">Weekly Schedule:</h3>
-    {{#each task as |task|}}
+    {{#each tasks as |task|}}
     <div class="weekly">
         <div class="col-md-8">
             <h4><a href="/artisan/{{task.id}}">{{task.title}}</a></h4>
