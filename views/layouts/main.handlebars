@@ -27,11 +27,11 @@
                 <a class="link" href="/">Work Schedule</a>
                 <a class="link" href="/employee">Employee Login</a>
                 {{#if logged_in}}
-                <a class="link" href="" id="employee_logout"> Employee Logout</a>
-                {{else}}
+                <a class="link" href="/" id="employee_logout"> Employee Logout</a>
+                {{/if}}
                 <a class="link" href="/manager">Manager Login</a>
-
-                <a class="link" href="" id="manager_logout"> Manager Logout</a>
+                {{#if logged_in}}
+                <a class="link" href="/" id="manager_logout"> Manager Logout</a>
                 {{/if}}
             </nav>
 

@@ -122,11 +122,11 @@ header{
     
 }
 .h2{
-    padding-top: 10px;
+    padding-top: 5px;
     font-family:'Noto Sans', sans-serif;
-    font-size: 20 px;
+    font-size: 40 px;
     color:#f0eeee;
-   
+    text-align: center;
     
 }
 .h1-centre{ 
@@ -142,6 +142,9 @@ header{
     font-family:'Noto Sans', sans-serif;
     font-size: 16px;
     color:#f0eeee;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
     
 }
 
@@ -150,7 +153,19 @@ p{
 
 }
 
+.day   {
+    color: blanchedalmond;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: black;
+}
 
+.welcome {
+
+background-color: black;
+}
 
 
 

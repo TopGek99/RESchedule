@@ -8,7 +8,10 @@ const managerLoginHandler = async (event) => {
 		//This sends a POST request to API endpoint
 		const response = await fetch('/api/manager/login', {
 			method: 'POST',
-			body: JSON.stringify({ email, password }),
+			body: JSON.stringify({	
+				email: email,
+				password: password, 
+			}),
 			headers: { 'Content-Type': 'application/json' },
 		});
 
