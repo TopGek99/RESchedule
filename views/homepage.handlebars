@@ -1,48 +1,45 @@
 <div class="row">
     <div class="col-md-6">
         <h2> Login</h2>
-        <form class="form login-form" id="employee-login">
-            <div class="container">
-                <div class="row">
-                    <h2 class="h1-centre"><span class="fancy">RE</span>Schedule Login</h2>
-                    <form class="form login-form" id="employee-form">
-                        <div class="form-group">
-                            <label for="employee-email">Email:</label>
-                            <input class="form-input" type="text" id="employee-email" />
-                        </div>
-                        <div class="form-group">
-                            <label for="employee-password">Password:</label>
-                            <input class="form-input" type="password" id="employee-password" />
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="submit">Employee Login</button>
-
-                        </div>
-                    </form>
-                </div>
-
-                <!--Setting out the Manager login-->
-                <div class="row">
-                    <form class="form login-form" id="manager-form">
-
-                        <div class="form-group">
-                            <label for="manager-email">Email:</label>
-                            <input class="form-input" type="text" id="manager-email" />
-                        </div>
-                        <div class="form-group">
-                            <label for="manager-password">Password:</label>
-                            <input class="form-input" type="password" id="manager-password" />
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="submit">Manager Login</button>
-
-                        </div>
-                    </form>
-                </div>
+        <div class="container">
+            <div class="row">
+                <h2 class="h1-centre"><span class="fancy">RE</span>Schedule Login</h2>
+                <form class="form login-form" id="employee-form">
+                    <div class="form-group">
+                        <label for="employee-email">Email:</label>
+                        <input class="form-input" type="text" id="employee-email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="employee-password">Password:</label>
+                        <input class="form-input" type="password" id="employee-password" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">Employee Login</button>
+                    </div>
+                </form>
             </div>
-            <p style="text-align:center" class="text-warning">Not a member ? 
-                <a href="/signupEmployee">Sign up as employee</a> or
-                <a href="/signupManager">Sign up as manager</a>
-            </p>
+            <!--Setting out the Manager login-->
+            <div class="row">
+                <form class="form login-form" id="manager-form">
+                    <div class="form-group">
+                        <label for="manager-email">Email:</label>
+                        <input class="form-input" type="text" id="manager-email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="manager-password">Password:</label>
+                        <input class="form-input" type="password" id="manager-password" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">Manager Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<p style="text-align:center" class="text-warning">Not a member ?
+    <a href="/signupEmployee">Sign up as employee</a> or
+    <a href="/signupManager">Sign up as manager</a>
+</p>
 <script src="js/employee_login.js"></script>
 <script src="js/manager_login.js"></script>
