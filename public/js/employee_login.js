@@ -20,11 +20,10 @@ const employeeLoginHandler = async (event) => {
 			document.location.replace('/employee');
 		} else {
 			alert(response.statusText);
-			console.log(response.error);
 		}
 	}
 };
 
 document
-	.querySelector('#employee-login')
+	.querySelector('#employee-form')
 	.addEventListener('submit', employeeLoginHandler);

@@ -1,34 +1,151 @@
-body{
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
 
-}
+
+html{
+    background-color:rgb(14, 78, 143)
+    
+} 
+/*Banner at top of page */
 .wrapper{
+   background-image: url('../images/background.jpg');
+   background-size: cover;
+    background-position: center;
+    height: 400px;
+    max-width: auto;
+    margin: 5px;
+    padding: 10px;
+    
+  
+} 
+.row{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.container{
+    padding: 0 auto;
+    display: flexbox;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.app-title{
+   
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-inline: 200px;
+}  
+/*Nav similar to commented out below */
+.nav{
+    background-image: linear-gradient(to bottom, #faf6f6, #0a0a0a);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+    color: black;
+    /*.top-bar,.top-bar-right,.top-bar-left, .menu{
+    color:#39373b;
+    font-size: 16px;
+    font-family: 'Nova Cut',sans-serif;*/
+   
+}
+.btn {
+    color: snow;
+    background-color: black;
+}
+
+.link {
+    color: blanchedalmond;
+    padding: 5px;
+    margin: 10px;
+}
+/*Start of style for main section of website*/
+.main{
+    padding: 0%;
+    margin: auto;
     background-color:#dacbbe;
     border-radius: 15%;
     border-style: groove;
     border-color:#d4a27c;
-}
-.nav{
-
-}
-.main{
     
 }
-.app-title{
+/*Start of style settings for login cards*/
+.card{
+    width: 20rem;
+    display: flexbox;
+    padding: 5px;
+    margin-top:5px;
+    background-color:#d4a27c;
+    border-radius: 10px;
+    border-color:#afcb80;
+    position: relative;
+    border-style: groove;
+    border-width: 3px;
 
 }
 
-h1{
+
+span.fancy{
+    color: #afcb80;
+    font-family: 'Alex Brush', 'sans-serif';
+    font-size: 60px;
+    text-align: center;
+    
+}
+.link{
+    font-family: 'Quantico', sans-serif;
+    font-size: 14px;
+
+}
+
+header{
     color: #525f48;
     font-family: 'Quantico', sans-serif;
-    font-weight: 900;
-    font-size: 2em;
+    font-size: 48px;
 }
 .login-form{
-    background-color: #afcb80;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #faf6f6, #0a0a0a);
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    box-shadow: 5px 5px black;
+    padding: 10px;
+    color: blanchedalmond;
 
+
+}
+.h1{
+    padding-top: 15px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 58px;
+    
+}
+.h2{
+    padding-top: 5px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 40 px;
+    color:#f0eeee;
+    text-align: center;
+    
+}
+.h1-centre{ 
+    padding-top: 10px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 45px;
+    color:#f0eeee;
+    text-align: center;
+
+}
+.h3{
+    padding-top: 15px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 16px;
+    color:#f0eeee;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 p{
@@ -36,12 +153,24 @@ p{
 
 }
 
+.day   {
+    color: blanchedalmond;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: black;
+}
+
+.welcome {
+
+background-color: black;
+}
 
 
 
 
-
-//**font-family: 'Aleo', sans-serif
+/**font-family: 'Aleo', sans-serif
 font-family: 'Gafata', sans-serif
-font-family: 'Nerko One', sans-serif**//
+**/
 
