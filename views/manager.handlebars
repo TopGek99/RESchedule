@@ -11,51 +11,28 @@
 
     {{#each employees as |employee|}}
     <div class="row mb-2">
-        <div class="col-md-8">
-            <h4><a href="/Employee/{{employee.id}}">{{employee.availability}}{{task.id}}</a></h4>
-        </div>
-        <div class="col-md-4">
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h3>Employee Profile</h3>
-                    <form class="form employee-form">
-                        <div class="form-group">
-                            <label for="employee_form">Employee Availability:</label>
-                            <input class="form-input" type="text" id='email' name="email" />
-                            <input class="form-input" type="text" id='first_name' name="first_name" />
-                            <input class="form-input" type="text" id='last_name' name="last_name" />
-                            <div class="calendar">
-                                <div class="calendar-header">
-                                    <div class="calendar-date">Monday</div>
-                                    <div class="calendar-date">Tuesday</div>
-                                    <div class="calendar-date">Wednesday</div>
-                                    <div class="calendar-date">Thursday</div>
-                                    <div class="calendar-date">Friday</div>
-                                    <div class="calendar-body">
-                                        <div class="calendar-date is disabled"><button class="date-item" id="29d">29
-                                        </div>
-                                        <div class="calendar-date is disabled"><button class="date-item" id="30d">30
-                                        </div>
-                                        <div class="calendar-date is disabled"><button class="date-item" id="31d">31
-                                        </div>
-                                        <div class="calendar-date is disabled"><button class="date-item" id="1d">1</div>
-                                        <div class="calendar-date is disabled"><button class="date-item" id="2d">2</div>
-                                        <div class="calendar-date"><button class="date-item" id="29a">29</div>
-                                        <div class="calendar-date"><button class="date-item" id="30a">30</div>
-                                        <div class="calendar-date "><button class="date-item" id="31a">31</div>
-                                        <div class="calendar-date "><button class="date-item" id="1a">1</div>
-                                        <div class="calendar-date "><button class="date-item" id="2a">2</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="datetime" data-display-mode="inline" data-is-range="true"
-                                data-close-on-select="false">
-                        </div>
-                        {{! can set the following --startDate , endDate, startTime, endTime --}}
-
-            </div>
-            {{/each}}
-        </div>
+        <h2>Employee Name: {{employee.first_name}} {{employee.last_name}}</h2>
+        <p>This employee is available for {{employee.availability}} hours per week</p>
     </div>
+    {{/each}}
+    <div class="row mb-2">
+        <form action="POST">
+            <label for="employee">Employee: </label>
+            <select name="employee" id="employee">
+                <option value=""></option>
+                {{#each employees as |employee|}}
+                <option value="{{employee.first_name}} {{employee.last_name}}">
+                    {{employee.first_name}} {{employee.last_name}}
+                </option>
+                {{/each}}
+            </select>
+            <input type="datetime" name="start-time" id="start-time">
+            <input type="datetime" name="finish-time" id="finish-time">
+            <label for="task-title">Task: </label>
+            <input type="text" name="task-title" id="task-title">
+            <button></button>
+        </form>
+    </div>
+
 </div>
 <script src="js/manager_logout.js"></script>
