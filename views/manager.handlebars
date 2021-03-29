@@ -15,13 +15,13 @@
         <p>This employee is available for {{employee.availability}} hours per week</p>
     </div>
     {{/each}}
-    <div class="row mb-2">
-        <form action="POST">
+    <div class="row mb-2" id="create_task">
+        <form>
             <label for="employee">Employee: </label>
             <select name="employee" id="employee">
                 <option value=""></option>
                 {{#each employees as |employee|}}
-                <option value="{{employee.first_name}} {{employee.last_name}}">
+                <option value="{{employee.id}}">
                     {{employee.first_name}} {{employee.last_name}}
                 </option>
                 {{/each}}
@@ -30,9 +30,10 @@
             <input type="datetime" name="finish-time" id="finish-time">
             <label for="task-title">Task: </label>
             <input type="text" name="task-title" id="task-title">
-            <button></button>
+            <button type="submit" class="btn btn-primary" id="task-button">Create Task</button>
         </form>
     </div>
 
 </div>
 <script src="js/manager_logout.js"></script>
+<script src="js/create_task.js"></script>
