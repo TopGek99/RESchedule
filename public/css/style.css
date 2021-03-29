@@ -80,8 +80,6 @@ html{
     border-width: 3px;
 
 }
-
-
 span.fancy{
     color: #afcb80;
     font-family: 'Alex Brush', 'sans-serif';
@@ -148,10 +146,12 @@ header{
     
 }
 
-p{
-    font-family: 'Noto Sans', 'sans-serif';
-    font-size: 12px;
-    color:#faf6f6;
+.text-warning {
+    font-family: 'Noto Sans', sans-serif;
+    color:rgb(14, 78, 143);
+    background-color: black;
+    
+
 }
 
 .day   {
@@ -168,8 +168,21 @@ p{
 background-color: black;
 }
 
+.weekly {
+    color: blanchedalmond;
+}
 
-
+.job-card {
+    width: 20rem;
+    display: flexbox;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(61, 57, 87);
+    
+}
+.job {
+    font-size: larger;
+}
 
 /**font-family: 'Aleo', sans-serif
 font-family: 'Gafata', sans-serif

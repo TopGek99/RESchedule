@@ -1,57 +1,62 @@
 <div class="row">
     <div class="col-auto">
-        <h2 class = "h2"><span class = "fancy">W</span>elcome,</h2> 
-            <h3 class = "h3">{{first_name}}  {{last_name}}</h3>
-            
+        <h2 class="h2"><span class="fancy">W</span>elcome,</h2>
+        <h3 class="h3">{{first_name}} {{last_name}}</h3>
+
     </div>
 </div>
+<div class="container" style="text-align: center;">
+    <div class="column is-align-items-center">
+        <h2 class="has-text-centered">Employee Weekly Availability</h3>
 
-<div class="col-md-6">
-    <h3>Employee Availability</h3>
+            <table class="table" style="margin:auto">
+                <thead>
+                    <tr>
+                        <th><abbr title="EmployeeID">id </abbr></th>
+                        <th><abbr title="FirstName">First Name</abbr></th>
+                        <th><abbr title="SecondName">Last Name</abbr></th>
+                        <th><abbr title="Email">Email</abbr></th>
+                        <th><abbr title="Availability">Available</abbr></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each employees as |employee|}}
+                    <tr>
+                        <th>{{id}}</th>
+                        <td>{{first_name}}</td>
+                        <td>{{last_name}}</td>
+                        <td>{{email}}</td>
+                        <td>{{availability}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
 
-    {{#each employee as |employee|}}
-    <div class="row mb-2">
-        <div class="col-md-8">
-            <h4><a href="/Employee/{{employee.id}}">{{unavailability}}{{task.id}}</a></h4>
-        </div>
-        <div class="col-md-4">
-          <div class="row mt-4">
-          <div class="col-md-6">
-          <h3>Employee Profile</h3>
-           <form class="form employee-form">
-            <div class="form-group">
-                <label for="employee_form">Employee Availability:</label>
-                <input class="form-input" type="text" id='email' name="email" />
-                <input class="form-input" type="text" id='first_name' name="first_name" />
-                <input class="form-input" type="text" id='last_name' name="last_name" />
-                <div class="calendar">
-                    <div class="calendar-header">
-                        <div class="calendar-date">Monday</div>
-                        <div class="calendar-date">Tuesday</div>
-                        <div class="calendar-date">Wednesday</div>
-                        <div class="calendar-date">Thursday</div>
-                        <div class="calendar-date">Friday</div>
-                        <div class="calendar-body">
-                            <div class="calendar-date is disabled"><button class="date-item" id="29d">29</div>
-                            <div class="calendar-date is disabled"><button class="date-item" id="30d">30</div>
-                            <div class="calendar-date is disabled"><button class="date-item" id="31d">31</div>
-                            <div class="calendar-date is disabled"><button class="date-item" id="1d">1</div>
-                            <div class="calendar-date is disabled"><button class="date-item" id="2d">2</div>
-                            <div class="calendar-date"><button class="date-item" id="29a">29</div>
-                            <div class="calendar-date"><button class="date-item" id="30a">30</div>
-                            <div class="calendar-date "><button class="date-item" id="31a">31</div>
-                            <div class="calendar-date "><button class="date-item" id="1a">1</div>
-                            <div class="calendar-date "><button class="date-item" id="2a">2</div>
-                        </div>
+            </table>
+
+
+            <form id="create_task">
+                <div class="field">
+                    <label for="employee">Employee: </label>
+                    <div class="select is-normal">
+                        <select id="manager_employee">
+                            {{#each employees as |employee|}}
+                            <option value="{{employee.id}}">
+                                {{employee.first_name}} {{employee.last_name}}
+                            </option>
+                            {{/each}}
+                        </select>
                     </div>
-                </div>
-                <input type="datetime" data-display-mode="inline" data-is-range="true" data-close-on-select="false">
-            </div>
-            {{! can set the following --startDate , endDate, startTime, endTime --}}
-    </div>
 
-        </div>
-        {{/each}}
+                </div>
+                <input type="datetime" name="start-time" id="start-time">
+                <input type="datetime" name="finish-time" id="finish-time">
+                <label for="task-title">Task: </label>
+                <input type="text" name="task-title" id="task-title">
+                <button type="submit" class="btn btn-primary" id="task-button">Create Task</button>
+            </form>
     </div>
-    {{/if}}
 </div>
+
+
+<script src="js/manager_logout.js"></script>
+<script src="js/create_task.js"></script>

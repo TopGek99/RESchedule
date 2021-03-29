@@ -14,34 +14,23 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.0.9/dist/js/bulma-calendar.min.js"></script>
+<<<<<<< HEAD
     
+=======
+>>>>>>> b9eb7b504f40fab2ebf14052231a2dc4ab2e317d
 </head>
 
 <body>
     <div class="wrapper">
         <header class="hero">
-
-            
             <nav class="nav">
-                <h1 class='app-title'><span class = "fancy">RE</span>Schedule Management System</h1>
+                <h1 class='app-title'><span class="fancy">RE</span>Schedule Management System</h1>
                 <a class="link" href="/">Home</a>
-                <a class="link" href="/">Work Schedule</a>
-                <a class="link" href="/employee">Employee Login</a>
                 {{#if logged_in}}
-                <a class="link" href="/" id="employee_logout"> Employee Logout</a>
-                {{/if}}
-                <a class="link" href="/manager">Manager Login</a>
-                {{#if logged_in}}
-                <a class="link" href="/" id="manager_logout"> Manager Logout</a>
+                <a class="link" href="/" id="logout">Logout</a>
                 {{/if}}
             </nav>
-
-
-
         </header>
-       
-
-
     </div>
  <main>
             {{{ body }}}

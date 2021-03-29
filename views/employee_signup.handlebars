@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="column is-half is-offset-one-quarter" style="background-color:#d4a27c">
+        <form id="employee-signup">
+            <div class="field">
+                <label class="label">First Name:</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input" id="employee_firstName">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Last Name:</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input" id="employee_lastName">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Email:</label>
+                <div class="control">
+                    <input class="input" type="email" placeholder="Email input" id="employee_email">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Password:</label>
+                <div class="control">
+                    <input class="input" type="password" placeholder="Password" id="employee_password">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Your manager is:</label>
+                <div class="select is-normal">
+                    <select id="employee_namager">
+                        {{#each managers as |manager|}}
+                        <option value="{{manager.id}}">{{manager.first_name}} {{manager.last_name}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/employee_signup.js"></script>

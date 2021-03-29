@@ -1,4 +1,5 @@
 // Initialize all input of date type.
+
 const options = {
 	color: 'primary',
 	type: 'datetime',
@@ -16,6 +17,7 @@ const options = {
 }
 const calendars = bulmaCalendar.attach('[type = "datetime"]', options);
 console.log(calendars);
+
 // Loop on each calendar initialized
 // calendars.forEach(calendar => {
 // 	console.log(calendar)
