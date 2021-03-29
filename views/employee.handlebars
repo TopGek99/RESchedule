@@ -65,7 +65,9 @@
             {{#each tasks as |task|}}
             <div class="weekly">
                 <div class="col-md-8">
-                    <h4><a href="/artisan/{{task.id}}">{{task.title}}</a></h4>
+                    <h2>{{task.title}}</h2>
+                    <p id="start-time"><b>Start Time:</b> {{task.start_time}}</p>
+                    <p id="finish-time"><b>Finish Time:</b> {{task.finish_time}}</p>
                 </div>
                 <div class="col-md-4">
                     <button class="btn btn-sm btn-danger" data-id="{{task.id}}">DELETE</button>
