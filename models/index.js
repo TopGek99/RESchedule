@@ -1,5 +1,5 @@
 const Employee = require('./Employee');
-const Task = require('./Task');
+const Task = require('./NewTask');
 const Manager = require('./Manager');
 
 Manager.hasMany(Employee, {
