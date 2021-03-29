@@ -9,15 +9,27 @@
     </div>
 </div>
 
+        <h2 class = "h2">Welcome,
+            
+            {{first_name}}   {{last_name}}
+            </h2>
+    </div>
+</div>
+
 <div class="row mt-4">
     <div class="col-md-6">
         <h3 class="h3">Employee Profile</h3>
         <!--SHOW BULMA CALENDAR HERE -->
-        <div class="calendar">
-
+ <div class = "calendar">
+            <form class = "form-hours">
+            <input type = "datetime" class = "calendar">
+        <button type="submit" class="btn btn-primary" id = "confirm">Confirm</button>
+    
+    </form>
+            
         </div>
-
-        <div class="day">
+  {{!-- Do not show this until employment availability has been selected      
+        <div class = "day">
             <div id="monday">
                 <h2>Monday</h2>
                 <input class="input is-rounded" type="text" placeholder="Hours Available">
@@ -50,8 +62,18 @@
                 <h2>Friday</h2>
                 <input class="input is-rounded" type="text" placeholder="Hours Available">
             </div>
-
-
+<div class="form-group">
+        <button type="submit" class="btn btn-primary">Confirm</button>
+    </div>
+    </form>
+</div>--}} 
+{{#if task.length}}
+<div class="col-md-6 project-list">
+    <h2 class = "h2">Weekly Schedule:</h3>
+    {{#each task as |task|}}
+    <div class="weekly">
+        <div class="col-md-8">
+            <h4><a href="/employee/{{task.id}}">{{task.title}}</a></h4>
         </div>
 
         <div class="form-group">

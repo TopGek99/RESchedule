@@ -33,6 +33,7 @@
     "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
     "gulp": "^4.0.2",
+    "latest-version": "^5.1.0",
     "mysql2": "^2.2.5",
     "prettier": "^2.2.1",
     "sequelize": "^6.5.1"
