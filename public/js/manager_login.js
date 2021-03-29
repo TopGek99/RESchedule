@@ -1,5 +1,5 @@
 const managerLoginHandler = async (event) => {
-	event.preventDefault();
+	// event.preventDefault();
 	//Collects values from login form
 	const email = document.querySelector('#manager-email').value.trim();
 	const password = document.querySelector('#manager-password').value.trim();
@@ -8,9 +8,9 @@ const managerLoginHandler = async (event) => {
 		//This sends a POST request to API endpoint
 		const response = await fetch('/api/manager/login', {
 			method: 'POST',
-			body: JSON.stringify({	
+			body: JSON.stringify({
 				email: email,
-				password: password, 
+				password: password,
 			}),
 			headers: { 'Content-Type': 'application/json' },
 		});
@@ -25,5 +25,5 @@ const managerLoginHandler = async (event) => {
 };
 
 document
-	.querySelector('#manager-login')
+	.querySelector('#manager-form')
 	.addEventListener('submit', managerLoginHandler);

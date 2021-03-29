@@ -19,35 +19,18 @@
 <body>
     <div class="wrapper">
         <header class="hero">
-
-
             <nav class="nav">
                 <h1 class='app-title'><span class="fancy">RE</span>Schedule Management System</h1>
                 <a class="link" href="/">Home</a>
-                <a class="link" href="/">Work Schedule</a>
-                <a class="link" href="/employee">Employee Login</a>
                 {{#if logged_in}}
-                <a class="link" href="/" id="employee_logout"> Employee Logout</a>
-                {{/if}}
-                <a class="link" href="/manager">Manager Login</a>
-                {{#if logged_in}}
-                <a class="link" href="/" id="manager_logout"> Manager Logout</a>
+                <a class="link" href="/" id="logout">Logout</a>
                 {{/if}}
             </nav>
-
         </header>
-
     </div>
     <main>
         {{{ body }}}
     </main>
-    
-    <script src="js/employee_login.js"></script>
-    <script src="js/manager_login.js"></script>
-    <script src="js/employee_logout.js"></script>
-    <script src="js/manager_logout.js"></script>
-
-
 </body>
 
 </html>

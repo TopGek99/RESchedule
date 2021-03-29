@@ -1,77 +1,79 @@
 <div class="row">
     <div class="col-auto">
         <div class="welcome">
-            <h1 class = "h2"><span class = "fancy">W</span>elcome,</h1> 
-            <h2 class = "h2">{{first_name}}  {{last_name}}</h2>
-            
+            <h1 class="h2"><span class="fancy">W</span>elcome,</h1>
+            <h2 class="h2">{{first_name}} {{last_name}}</h2>
+
         </div>
-        
+
     </div>
 </div>
 
 <div class="row mt-4">
     <div class="col-md-6">
-        <h3 class = "h3">Employee Profile</h3>
+        <h3 class="h3">Employee Profile</h3>
         <!--SHOW BULMA CALENDAR HERE -->
-        <div class = "calendar">
-            
-        </div>
-        
-        <div class = "day">
-            <div id="monday">
-                <h2>Monday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available"> 
-            </div>
-            
-        </div>
-       <div class = "day">
-            <div id="tuesday">
-                <h2>Tuesday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available"> 
-            </div>
-            
-        </div>
-        <div class = "day">
-            <div id="wednesday">
-                <h2>Wednesday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available"> 
-            </div>
-            
-        </div>
-        <div class = "day">
-            <div id="thursday">
-                <h2>Thursday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available"> 
-            </div>
-            
-        </div>
-        <div class = "day">
-            <div id="friday">
-                <h2>Friday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available"> 
-            </div>
-            
+        <div class="calendar">
+
         </div>
 
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Confirm</button>
-    </div>
-    </form>
-</div>
-{{#if tasks.length}}
-<div class="col-md-6 project-list">
-    <h2 class = "h2">Weekly Schedule:</h3>
-    {{#each tasks as |task|}}
-    <div class="weekly">
-        <div class="col-md-8">
-            <h4><a href="/artisan/{{task.id}}">{{task.title}}</a></h4>
+        <div class="day">
+            <div id="monday">
+                <h2>Monday</h2>
+                <input class="input is-rounded" type="text" placeholder="Hours Available">
+            </div>
+
         </div>
-        <div class="col-md-4">
-            <button class="btn btn-sm btn-danger" data-id="{{task.id}}">DELETE</button>
+        <div class="day">
+            <div id="tuesday">
+                <h2>Tuesday</h2>
+                <input class="input is-rounded" type="text" placeholder="Hours Available">
+            </div>
+
         </div>
+        <div class="day">
+            <div id="wednesday">
+                <h2>Wednesday</h2>
+                <input class="input is-rounded" type="text" placeholder="Hours Available">
+            </div>
+
+        </div>
+        <div class="day">
+            <div id="thursday">
+                <h2>Thursday</h2>
+                <input class="input is-rounded" type="text" placeholder="Hours Available">
+            </div>
+
+        </div>
+        <div class="day">
+            <div id="friday">
+                <h2>Friday</h2>
+                <input class="input is-rounded" type="text" placeholder="Hours Available">
+            </div>
+
+
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Confirm</button>
+        </div>
+        </form>
     </div>
-    {{/each}}
-</div>
-{{/if}}
+    {{#if tasks.length}}
+    <div class="col-md-6 project-list">
+        <h2 class="h2">Weekly Schedule:</h3>
+            {{#each tasks as |task|}}
+            <div class="weekly">
+                <div class="col-md-8">
+                    <h4><a href="/artisan/{{task.id}}">{{task.title}}</a></h4>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-sm btn-danger" data-id="{{task.id}}">DELETE</button>
+                </div>
+            </div>
+            {{/each}}
+    </div>
+    {{/if}}
 </div>
 <script src="js/calendar.js"></script>
+<script src="js/employee_logout.js"></script>
