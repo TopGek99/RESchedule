@@ -40,7 +40,7 @@ router.get('/manager', async (req, res) => {
 			include: [
 				{
 					model: Employee,
-					attributes: ['first_name', 'last_name', 'email', 'availability'],
+					attributes: ['id', 'first_name', 'last_name', 'email', 'availability'],
 				},
 				{
 					model: Task,
