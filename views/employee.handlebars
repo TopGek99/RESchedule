@@ -65,13 +65,41 @@
             {{#each tasks as |task|}}
             <div class="weekly">
                 <div class="col-md-8">
-                    <h2>{{task.title}}</h2>
-                    <p id="start-time"><b>Start Time:</b> {{task.start_time}}</p>
-                    <p id="finish-time"><b>Finish Time:</b> {{task.finish_time}}</p>
+
+                    <div class="job-card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://www.pngkey.com/png/full/500-5002643_butler-silhouette-clip-art-waiter-clip-art.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+
+                                </div>
+                                <div class="media-content">
+                                    <h2 class= "job">{{task.title}}</h2>
+                                    <p>Fancy Restaurant</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Tasks include- waiting tables, customer service, cleaning, money handling and food
+                                handling.
+
+                                <br>
+                                <p id="start-time"><b>Start Time:</b> {{format_date task.start_time}}</p>
+                                <p id="finish-time"><b>Finish Time:</b> {{format_date task.finish_time}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-sm btn-danger" data-id="{{task.id}}">DELETE</button>
+                            </div>
+                        </div>
+                    </div>
+              
+                   
                 </div>
-                <div class="col-md-4">
-                    <button class="btn btn-sm btn-danger" data-id="{{task.id}}">DELETE</button>
-                </div>
+                
             </div>
             {{/each}}
     </div>
