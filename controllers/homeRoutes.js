@@ -11,6 +11,25 @@ router.get('/', (req, res) => {
 	}
 });
 
+router.get('/signupEmployee', async (req, res)=> {
+	try {
+		const managerData = await Manager.findAll({
+			attributes: ['id','first_name', 'last_name']
+		});
+
+		const managers = managerData.map(manager=> manager.get({plain:true}))
+
+		res.render("employee_signup", {managers});
+		
+	} catch (err) {
+		res.status(500).json(err)
+	}
+})
+
+router.get('/signupManager', (req, res)=> {
+	res.render("manager_signup")
+})
+
 router.get('/manager', async (req, res) => {
 	try {
 		if (!req.session.logged_in) {
@@ -52,7 +71,7 @@ router.get('/employee', async (req, res) => {
 			include: [
 				{
 					model: Task,
-					attributes: ['title', 'start_time', 'finish_time'],
+					attributes: ['id','title', 'start_time', 'finish_time'],
 				},
 			],
 		});

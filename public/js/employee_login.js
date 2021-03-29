@@ -1,9 +1,10 @@
 const employeeLoginHandler = async (event) => {
-	// event.preventDefault();
+	event.preventDefault();
 	//Collects values from login form
 	const email = document.querySelector('#employee-email').value.trim();
 	const password = document.querySelector('#employee-password').value.trim();
 
+	console.log(email, password)
 	if (email && password) {
 		//This sends a POST request to API endpoint
 		const response = await fetch('/api/employee/login', {
@@ -23,7 +24,6 @@ const employeeLoginHandler = async (event) => {
 		}
 	}
 };
-
 document
 	.querySelector('#employee-form')
 	.addEventListener('submit', employeeLoginHandler);
