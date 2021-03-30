@@ -202,15 +202,15 @@ header {
 	margin-right: 100px;
 }
 #assign-task {
-	float: right;
+	/* float: right; */
 	margin-left: 120px;
 	margin-right: 20px;
 	margin-top: 20px;
 	padding: 5px;
 	border-radius: 0.5ch;
-	border-style: groove;
+	/* border-style: groove;
 	border-width: 5pt;
-	border-color: #525f48;
+	border-color: #525f48; */
 }
 .avail-emp {
 	border-radius: 0.5ch;

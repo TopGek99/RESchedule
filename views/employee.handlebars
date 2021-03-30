@@ -2,7 +2,7 @@
     <div class="col-auto">
         <div class="welcome">
             <h1 class="h2"><span class="fancy">W</span>elcome, {{first_name}} {{last_name}}</h1>
-           
+
         </div>
     </div>
 </div>
@@ -11,106 +11,109 @@
     <div class="col-md-6">
         <h3 class="h3">Employee Profile Information</h3>
         <div class="col-md-6">
-        <div class="avail-weekly">
-            <h2 class = "h2">Enter Weekly Availability</h2>
-             <table class="table-emp" style="margin:auto" align="center">
-                <thead>
-                    <tr>
-                        <th align="center"><abbr title="monday">Monday</abbr></th>
-                        <th align="center"><abbr title="tuesday">Tuesday</abbr></th>
-                        <th align="center"><abbr title="wednesday">Wednesday</abbr></th>
-                        <th align="center"><abbr title="thursday">Thursday</abbr></th>
-                        <th align="center"><abbr title="friday">Friday</abbr></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        {{!--Monday--}}
-                        <td><div id="monday" class = "day">
-                        <input class="input is-rounded" type="text" placeholder="Hours">
-                        </div></td>
+            <div class="avail-weekly">
+                <h2 class="h2">Enter Weekly Availability</h2>
+                <table class="table-emp" style="margin:auto" align="center">
+                    <thead>
+                        <tr>
+                            <th align="center"><abbr title="monday">Monday</abbr></th>
+                            <th align="center"><abbr title="tuesday">Tuesday</abbr></th>
+                            <th align="center"><abbr title="wednesday">Wednesday</abbr></th>
+                            <th align="center"><abbr title="thursday">Thursday</abbr></th>
+                            <th align="center"><abbr title="friday">Friday</abbr></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            {{!--Monday--}}
+                            <td>
+                                <div id="monday" class="day">
+                                    <input class="input is-rounded" type="text" placeholder="Hours">
+                                </div>
+                            </td>
 
-                        {{!--Tuesday--}}
-                        <td><div id="tuesday" class = "day">
-                        <input class="input is-rounded" type="text" placeholder="Hours">
-                        </div></td>
+                            {{!--Tuesday--}}
+                            <td>
+                                <div id="tuesday" class="day">
+                                    <input class="input is-rounded" type="text" placeholder="Hours">
+                                </div>
+                            </td>
 
-                        {{!--Wednesday--}}
-                        <td><div id="wednesday" class = "day">
-                        <input class="input is-rounded" type="text" placeholder="Hours">
-                        </div></td>
+                            {{!--Wednesday--}}
+                            <td>
+                                <div id="wednesday" class="day">
+                                    <input class="input is-rounded" type="text" placeholder="Hours">
+                                </div>
+                            </td>
 
-                        {{!--Thursday--}}
-                        <td><div id="thursday" class = "day">
-                        <input class="input is-rounded" type="text" placeholder="Hours">
-                        </div></td>
+                            {{!--Thursday--}}
+                            <td>
+                                <div id="thursday" class="day">
+                                    <input class="input is-rounded" type="text" placeholder="Hours">
+                                </div>
+                            </td>
 
-                        {{!--Friday--}}
-                        <td><div id="friday"class = "day">
-                        <input class="input is-rounded" type="text" placeholder="Hours">
-                        </div></td>
-                    </tr>
-               <tr align = "center">
-                   <td align = "center"> 
-                    <form class = "employee-available">
-                    <div class="form-group" align = "center">
-                <button type="submit" class="btn btn-primary">Confirm</button>
-                </div>
-                </form>
-                </td>
-       
-                 </tr>
-                </tbody>
-             </table>    
-       </div>  
-       </div>  
+                            {{!--Friday--}}
+                            <td>
+                                <div id="friday" class="day">
+                                    <input class="input is-rounded" type="text" placeholder="Hours">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td align="center">
+                                <form class="employee-available">
+                                    <div class="form-group" align="center">
+                                        <button type="submit" class="btn btn-primary">Confirm</button>
+                                    </div>
+                                </form>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         {{!--Gets the employee information and tasks--}}
-            {{#if tasks.length}}
-    <div class="col-md-6 project-list">
+        {{#if tasks.length}}
+        <div class="col-md-6 project-list">
             {{#each tasks as |task|}}
             <div class="weekly">
                 <div class="col-md-8">
                     <div class="job-card">
                         <div class="media-content">
-                                    <h2 class = "h2"><span class = "fancy">F</span>ancy Restaurant</h2>
-                                    <h2 class= "job">{{task.title}}</h2>
-                                </div>
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src ="/images/waiter.png" alt="Placeholder image">
-                            </figure>
+                            {{!-- <h2 class="h2"><span class="fancy">F</span>ancy Restaurant</h2> --}}
+                            <h2 class="job">{{task.title}}</h2>
                         </div>
+                        {{!-- <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/images/waiter.png" alt="Placeholder image">
+                            </figure>
+                        </div> --}}
                         <div class="card-content">
                             <div class="media">
-                                <div class="media-left"></div>    
+                                <div class="media-left"></div>
                             </div>
                             <div class="content">
-                                <p>Tasks include</p>
-                                <ul>
-                                    <li>Waiting tables</li>
-                                    <li>Customer service</li>
-                                    <li>Cleaning</li>
-                                    <li>Food Preparation</li>
-                                    <li> Money Handling </li>
-                                </ul>
                                 <br>
                                 <p id="start-time"><b>Start Time:</b> {{format_date task.start_time}}</p>
                                 <p id="finish-time"><b>Finish Time:</b> {{format_date task.finish_time}}</p>
                             </div>
-                            <div class="col-md-4">
+                            {{!-- <div class="col-md-4">
                                 <button class="btn btn-sm btn-danger" data-id="{{task.id}}">DELETE</button>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
             </div>
             {{/each}}
+        </div>
+        {{/if}}
+        {{!--Employee enters their available hours for the week coming--}}
+
     </div>
-    {{/if}}
-     {{!--Employee enters their available hours for the week coming--}}
-  
+
 </div>
- 
-    </div>
-    
+
+<script src="js/employee.js"></script>
 <script src="js/employee_logout.js"></script>
