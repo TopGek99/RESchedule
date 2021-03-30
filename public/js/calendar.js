@@ -51,7 +51,7 @@ document.querySelector("#confirm").addEventListener('click', (e) => {
 	console.log(cal.startTime);
 	console.log(cal.endTime);
 	console.log(cal.startDate);
-	console.log(endDate);
+	console.log(cal.endDate);
 	console.log
 })
 

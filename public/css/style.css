@@ -169,7 +169,7 @@ background-color: black;
 }
 
 .weekly {
-    color: blanchedalmond;
+    color: black;
 }
 
 .job-card {
@@ -177,14 +177,45 @@ background-color: black;
     display: flexbox;
     margin: 10px;
     padding: 10px;
-    background-color: rgb(61, 57, 87);
+    align-content:space-around;
     
 }
 .job {
     font-size: larger;
+    text-align: justify;
 }
+.day{
+    width: 100px;
+    line-height: 2rem;
+}
+.weekly{
+    border-radius: 0.5ch;
+    border-style: groove;
+    border-width: 5pt;
+    border-color: #525f48;
+    background-color:grey;
+    padding:5px;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    margin-left: 160px;
+    margin-top:20px;
+}
+.avail-weekly{
+    float:right;
+    margin-left:150px;
+    margin-right: 20px;
+    margin-top:20px;
+    padding: 5px;
+    border-radius: 0.5ch;
+    border-style: groove;
+    border-width: 5pt;
+    border-color: #525f48;
+}
+.table-emp{
+    background-color:grey;
+    margin-right: 50px;
+    margin-left: 100px;
 
-/**font-family: 'Aleo', sans-serif
-font-family: 'Gafata', sans-serif
-**/
+}
 
