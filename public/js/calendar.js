@@ -3,8 +3,8 @@
 const options = {
 	color: 'primary',
 	type: 'datetime',
-	startDate:'03-29-2021',
-	endDate:'04-05-2021',
+	startDate: '03-29-2021',
+	endDate: '04-05-2021',
 	dateFormat: 'DD-MM-YYYY',
 	startTime: '09:00',
 	endTime: '17:00',
@@ -14,7 +14,7 @@ const options = {
 	isRange: 'true',
 	allowSameDayRange: 'true',
 	toggleOnInputClick: 'true',
-}
+};
 const calendars = bulmaCalendar.attach('[type = "datetime"]', options);
 console.log(calendars);
 
@@ -31,29 +31,17 @@ console.log(calendars);
 // 	// calendar.onChange(({datepicker, timepicker}) => {
 // 	// 	console.log(datepicker.data.value(startDate, endDate));
 // 	// 	console.log(timepicker.data.value(startTime, endTime));
-		
+
 // 	// });
-	
 
 // });
 
-for(var i = 0; i < calendars.length; i++) {
+for (var i = 0; i < calendars.length; i++) {
 	// Add listener to select event
-	calendars[i].on('select', date => {
+	calendars[i].on('select', (date) => {
 		console.log(date);
 	});
 }
-
-
-document.querySelector("#confirm").addEventListener('click', (e) => {
-	e.preventDefault();
-	const cal = document.querySelector("#day").bulmaCalendar;	
-	console.log(cal.startTime);
-	console.log(cal.endTime);
-	console.log(cal.startDate);
-	console.log(cal.endDate);
-	console.log
-})
 
 // To access to bulmaCalendar instance of an element
 // const element = document.querySelector('#day');
@@ -64,8 +52,5 @@ document.querySelector("#confirm").addEventListener('click', (e) => {
 // 	element.bulmaCalendar.on('select', function(datepicker) {
 // 		console.log(datepicker.data.value());
 // 	});
-	
 
-
-	
 // }

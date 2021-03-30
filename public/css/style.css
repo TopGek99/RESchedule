@@ -1,250 +1,227 @@
-
-html{
-    background-color:rgb(14, 78, 143)
-    
-} 
+html {
+	background-color: rgb(14, 78, 143);
+}
 /*Banner at top of page */
-.wrapper{
-   background-image: url('../images/background.jpg');
-   background-size: cover;
-    background-position: center;
-    height: 400px;
-    max-width: auto;
-    margin: 5px;
-    padding: 10px;
-    
-  
-} 
-.row{
-    margin-top:5px;
-    margin-bottom: 5px;
+.wrapper {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	max-width: auto;
+	margin: 5px;
+	padding: 10px;
+}
+.row {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
-.container{
-    padding: 0 auto;
-    display: flexbox;
-    margin-bottom:10px;
-    margin-top:10px;
+.container {
+	padding: 0 auto;
+	display: flexbox;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
-.app-title{
-   
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    margin-inline: 200px;
-}  
+.app-title {
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	margin-inline: 200px;
+}
 /*Nav similar to commented out below */
-.nav{
-    background-image: linear-gradient(to bottom, #faf6f6, #0a0a0a);
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 30px;
-    color: black;
-    /*.top-bar,.top-bar-right,.top-bar-left, .menu{
+.nav {
+	background-image: linear-gradient(to bottom, #faf6f6, #0a0a0a);
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 30px;
+	color: black;
+	/*.top-bar,.top-bar-right,.top-bar-left, .menu{
     color:#39373b;
     font-size: 16px;
     font-family: 'Nova Cut',sans-serif;*/
-   
 }
 .btn {
-    color: snow;
-    background-color: black;
+	color: snow;
+	background-color: black;
 }
 
 .link {
-    color: blanchedalmond;
-    padding: 5px;
-    margin: 10px;
+	color: blanchedalmond;
+	padding: 5px;
+	margin: 10px;
 }
 /*Start of style for main section of website*/
-.main{
-    padding: 0%;
-    margin: auto;
-    background-color:#dacbbe;
-    border-radius: 15%;
-    border-style: groove;
-    border-color:#d4a27c;
-    
+.main {
+	padding: 0%;
+	margin: auto;
+	background-color: #dacbbe;
+	border-radius: 15%;
+	border-style: groove;
+	border-color: #d4a27c;
 }
 /*Start of style settings for login cards*/
-.card{
-    width: 20rem;
-    display: flexbox;
-    padding: 5px;
-    margin-top:5px;
-    background-color:#d4a27c;
-    border-radius: 10px;
-    border-color:#afcb80;
-    position: relative;
-    border-style: groove;
-    border-width: 3px;
-
+.card {
+	width: 20rem;
+	display: flexbox;
+	padding: 5px;
+	margin-top: 5px;
+	background-color: #d4a27c;
+	border-radius: 10px;
+	border-color: #afcb80;
+	position: relative;
+	border-style: groove;
+	border-width: 3px;
 }
-span.fancy{
-    color: #afcb80;
-    font-family: 'Alex Brush', 'sans-serif';
-    font-size: 60px;
-    text-align: center;
-    
+span.fancy {
+	color: #afcb80;
+	font-family: 'Alex Brush', 'sans-serif';
+	font-size: 60px;
+	text-align: center;
 }
-.link{
-    font-family: 'Quantico', sans-serif;
-    font-size: 14px;
-
+.link {
+	font-family: 'Quantico', sans-serif;
+	font-size: 14px;
 }
 
-header{
-    color: #525f48;
-    font-family: 'Quantico', sans-serif;
-    font-size: 48px;
+header {
+	color: #525f48;
+	font-family: 'Quantico', sans-serif;
+	font-size: 48px;
 }
-.login-form{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(to bottom, #faf6f6, #0a0a0a);
-    border-radius: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    box-shadow: 5px 5px black;
-    padding: 10px;
-    color: blanchedalmond;
-
-
+.login-form {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	background-image: linear-gradient(to bottom, #faf6f6, #0a0a0a);
+	border-radius: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	box-shadow: 5px 5px black;
+	padding: 10px;
+	color: blanchedalmond;
 }
-.h1{
-    padding-top: 15px;
-    font-family:'Noto Sans', sans-serif;
-    font-size: 58px;
-    
+.h1 {
+	padding-top: 15px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 58px;
 }
-.h2{
-    padding-top: 5px;
-    font-family:'Noto Sans', sans-serif;
-    font-size: 40 px;
-    color:#f0eeee;
-    text-align: center;
-    
+.h2 {
+	padding-top: 5px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 40 px;
+	color: #f0eeee;
+	text-align: center;
 }
-.h1-centre{ 
-    padding-top: 10px;
-    font-family:'Noto Sans', sans-serif;
-    font-size: 45px;
-    color:#f0eeee;
-    text-align: center;
-
+.h1-centre {
+	padding-top: 10px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 45px;
+	color: #f0eeee;
+	text-align: center;
 }
-.h3{
-    padding-top: 15px;
-    font-family:'Noto Sans', sans-serif;
-    font-size: 16px;
-    color:#f0eeee;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    
+.h3 {
+	padding-top: 15px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	color: #f0eeee;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
 }
 
 .text-warning {
-    font-family: 'Noto Sans', sans-serif;
-    color:rgb(14, 78, 143);
-    background-color: black;    
-
+	font-family: 'Noto Sans', sans-serif;
+	color: rgb(14, 78, 143);
+	background-color: black;
 }
 
-.day   {
-    color: blanchedalmond;
-    margin: 10px;
-    padding: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-    box-shadow: black;
+.day {
+	color: blanchedalmond;
+	margin: 10px;
+	padding: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	box-shadow: black;
 }
 
 .welcome {
-
-background-color: black;
+	background-color: black;
 }
 
 .weekly {
-    color: black;
+	color: black;
 }
 
 .job-card {
-    width: 20rem;
-    display: flexbox;
-    margin: 10px;
-    padding: 10px;
-    align-content:space-around;
-    
+	width: 20rem;
+	display: flexbox;
+	margin: 10px;
+	padding: 10px;
+	align-content: space-around;
 }
 .job {
-    font-size: larger;
-    text-align: justify;
+	font-size: larger;
+	text-align: justify;
 }
-.day{
-    width: 100px;
-    line-height: 2rem;
+.day {
+	width: 100px;
+	line-height: 2rem;
 }
-.weekly{
-    border-radius: 0.5ch;
-    border-style: groove;
-    border-width: 5pt;
-    border-color: #525f48;
-    background-color:grey;
-    padding:5px;
-    width: 300px;
-    height: auto;
-    padding: 5px;
-    margin-left: 160px;
-    margin-top:20px;
+.weekly {
+	border-radius: 0.5ch;
+	border-style: groove;
+	border-width: 5pt;
+	border-color: #525f48;
+	background-color: grey;
+	padding: 5px;
+	width: 300px;
+	height: auto;
+	padding: 5px;
+	margin-left: 160px;
+	margin-top: 20px;
 }
-.avail-weekly{
-    float:right;
-    margin-left:150px;
-    margin-right: 20px;
-    margin-top:20px;
-    padding: 5px;
-    border-radius: 0.5ch;
-    border-style: groove;
-    border-width: 5pt;
-    border-color: #525f48;
+.avail-weekly {
+	float: right;
+	margin-left: 150px;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding: 5px;
+	border-radius: 0.5ch;
+	border-style: groove;
+	border-width: 5pt;
+	border-color: #525f48;
 }
-.table-emp{
-    background-color:grey;
-    margin-right: 50px;
-    margin-left: 100px;
-
+.table-emp {
+	background-color: grey;
+	margin-right: 50px;
+	margin-left: 100px;
 }
-.table{
-    background-color:grey;
-    margin-left: 50px;
-    margin-right: 100px;
-
+.table {
+	background-color: grey;
+	margin-left: 50px;
+	margin-right: 100px;
 }
-.assign-task{
-    float:right;
-    margin-left:120px;
-    margin-right: 20px;
-    margin-top:20px;
-    padding: 5px;
-    border-radius: 0.5ch;
-    border-style: groove;
-    border-width: 5pt;
-    border-color: #525f48;
-
+#assign-task {
+	float: right;
+	margin-left: 120px;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding: 5px;
+	border-radius: 0.5ch;
+	border-style: groove;
+	border-width: 5pt;
+	border-color: #525f48;
 }
-.avail-emp{
-    border-radius: 0.5ch;
-    border-style: groove;
-    border-width: 5pt;
-    border-color: #525f48;
-    background-color:grey;
-    padding:5px;
-    width: 300px;
-    height: auto;
-    padding: 5px;
-    margin-left: 160px;
-    margin-top:20px;
-
+.avail-emp {
+	border-radius: 0.5ch;
+	border-style: groove;
+	border-width: 5pt;
+	border-color: #525f48;
+	background-color: grey;
+	padding: 5px;
+	width: 300px;
+	height: auto;
+	padding: 5px;
+	margin-left: 160px;
+	margin-top: 20px;
 }
