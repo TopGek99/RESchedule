@@ -216,4 +216,35 @@ background-color: black;
     margin-left: 100px;
 
 }
+.table{
+    background-color:grey;
+    margin-left: 50px;
+    margin-right: 100px;
 
+}
+.assign-task{
+    float:right;
+    margin-left:120px;
+    margin-right: 20px;
+    margin-top:20px;
+    padding: 5px;
+    border-radius: 0.5ch;
+    border-style: groove;
+    border-width: 5pt;
+    border-color: #525f48;
+
+}
+.avail-emp{
+    border-radius: 0.5ch;
+    border-style: groove;
+    border-width: 5pt;
+    border-color: #525f48;
+    background-color:grey;
+    padding:5px;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    margin-left: 160px;
+    margin-top:20px;
+
+}
