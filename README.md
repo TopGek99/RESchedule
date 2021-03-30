@@ -37,10 +37,10 @@ bulma-calendar, date-and-time, gulp-cli
 📖Clone the repository, create a .ENV file and run npm run start. <br>
 Sign up as either employee or manager to begin to use RESchedule
 ## Screenshots
-![employee_profile](https://user-images.githubusercontent.com/73085179/112922622-52f4fe00-9154-11eb-92b6-30b373acefe9.png)
-![employee_signup](https://user-images.githubusercontent.com/73085179/112922631-57211b80-9154-11eb-8c6f-3baad1c458e8.png)
-![homepage](https://user-images.githubusercontent.com/73085179/112922636-58eadf00-9154-11eb-9386-016aa68c7908.png)
-![manager_signup](https://user-images.githubusercontent.com/73085179/112922640-5ab4a280-9154-11eb-95ef-833fb2db061c.png)
+![employee_profile](https://user-images.githubusercontent.com/73085179/112922622-52f4fe00-9154-11eb-92b6-30b373acefe9.png)<br/>
+![employee_signup](https://user-images.githubusercontent.com/73085179/112922631-57211b80-9154-11eb-8c6f-3baad1c458e8.png)<br/>
+![homepage](https://user-images.githubusercontent.com/73085179/112922636-58eadf00-9154-11eb-9386-016aa68c7908.png)<br/>
+![manager_signup](https://user-images.githubusercontent.com/73085179/112922640-5ab4a280-9154-11eb-95ef-833fb2db061c.png)<br/>
 
 ## Videos
 
@@ -56,7 +56,7 @@ This application is covered by the ISC license.
 ## Questions
 🤔 If you have any questions regarding this project please contact one of the above contributors<br />
 <br />
-🖐️ Find us on GitHub:
+🖐️ Find us on GitHub:<br/>
 <a href = "https://github.com/TopGek99">Alex Rowe</a><br/>
 <a href = "https://github.com/GaryChen513">Gary Chen</a><br/>
 <a href = "https://github.com/Jarred-Caris">Jarred Caris</a><br />
