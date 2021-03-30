@@ -9,8 +9,7 @@ document.querySelector('#confirm').addEventListener('click', (e) => {
 	// console.log;
 });
 
-const createTaskHandler = async (e) => {
-	e.preventDefault();
+const createTaskHandler = async () => {
 	console.log(cal.startTime);
 	const employee_select = document.querySelector('#manager_employee');
 	const employee_id = document.querySelectorAll('option')[
