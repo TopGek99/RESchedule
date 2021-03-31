@@ -1,5 +1,5 @@
 {
-  "name": "Project_Two",
+  "name": "RESchedule",
   "version": "1.0.0",
   "description": "<h1 align=\"center\">Job Scheduler</h1> <hr> <img scr = \"https://img.shields.io/badge/license-MIT-brightgreen\"/> <p align=\"center\">     <img src=\"https://img.shields.io/badge/Javascript-yellow\" />     <img src=\"https://img.shields.io/badge/jQuery-blue\"  />     <img src=\"https://img.shields.io/badge/-node.js-green\" />     <img src=\"https://img.shields.io/badge/-inquirer-red\" >      <img src=\"https://img.shields.io/badge/-downloader-blue\" >       <img src=\"https://img.shields.io/badge/-filesystem-yellow\" >     <img src=\"https://img.shields.io/badge/-screencastify-lightgrey\" />     <img src=\"https://img.shields.io/badge/-json-orange\" /> </p>",
   "main": "server.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jarred-Caris/Project_Two.git"
+    "url": "git+https://github.com/Chelle77322/RESchedule"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["content management", "manager", "employee_scheduler", "work_roster"],
+  "author": "Michelle Hall",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jarred-Caris/Project_Two/issues"
+    "url": "https://github.com/Chelle77322/RESchedule/issues"
   },
-  "homepage": "https://github.com/Jarred-Caris/Project_Two#readme",
+  "homepage": "https://github.com/Chelle77322/RESchedule#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bulma": "^0.9.2",
