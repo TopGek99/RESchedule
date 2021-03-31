@@ -1,5 +1,5 @@
 const signupManager = async (event) => {
-  event.preventDefault();
+  //   event.preventDefault();
 
   const qs = document.querySelector.bind(document);
   const firstName = qs("#manager_firstName").value.trim();

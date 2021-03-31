@@ -40,6 +40,7 @@ router.post("/login", async (req, res) => {
     });
 
     if (!employeeData) {
+      console.log("bad email");
       res
         .status(400)
         .json({ message: "Incorrect email or password, please try again" });
@@ -49,6 +50,7 @@ router.post("/login", async (req, res) => {
     const validPassword = await employeeData.checkPassword(req.body.password);
 
     if (!validPassword) {
+      console.log("bad password");
       res
         .status(400)
         .json({ message: "Incorrect email or password, please try again" });
