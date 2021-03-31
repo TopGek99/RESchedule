@@ -1,5 +1,5 @@
 {
-  "name": "RESchedule",
+  "name": "rechedule",
   "version": "1.0.0",
   "description": "<h1 align=\"center\">Job Scheduler</h1> <hr> <img scr = \"https://img.shields.io/badge/license-MIT-brightgreen\"/> <p align=\"center\">     <img src=\"https://img.shields.io/badge/Javascript-yellow\" />     <img src=\"https://img.shields.io/badge/jQuery-blue\"  />     <img src=\"https://img.shields.io/badge/-node.js-green\" />     <img src=\"https://img.shields.io/badge/-inquirer-red\" >      <img src=\"https://img.shields.io/badge/-downloader-blue\" >       <img src=\"https://img.shields.io/badge/-filesystem-yellow\" >     <img src=\"https://img.shields.io/badge/-screencastify-lightgrey\" />     <img src=\"https://img.shields.io/badge/-json-orange\" /> </p>",
   "main": "server.js",
