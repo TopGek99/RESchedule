@@ -1,81 +1,93 @@
 <div class="row">
     <div class="col-auto">
         <div class="welcome">
-            <h1 class="h2"><span class="fancy">W</span>elcome,</h1>
-            <h2 class="h2">{{first_name}} {{last_name}}</h2>
+            <h1 class="h2"><span class="fancy">W</span>elcome, {{first_name}} {{last_name}}</h1>
 
         </div>
-
     </div>
 </div>
-
-<div class="row mt-4">
+{{!--Start of main section of employee page--}}
+<div class="row mt-8">
     <div class="col-md-6">
-        <h3 class="h3">Employee Profile</h3>
-        <!--SHOW BULMA CALENDAR HERE -->
-        <div class="calendar">
+        <h3 class="h3">Employee Profile Information</h3>
+        <div class="col-md-6">
+            <div class="avail-weekly">
+                
+                <table class="table-emp" style="margin:auto" align="center">
+                    <thead>
+                      <h2 class="h2">Enter Weekly Availability</h2>  
+                    </thead>
+                    <tbody>
+                        <tr>
+                            {{!--Weekly--}}
+                            <td>
+                                <div id="availability" class="day">
+                                    <input id="avail" class="input is-rounded" type="text" placeholder="Hours">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td align="center">
+                                <form class="employee-available">
+                                    <div class="form-group" align="center">
+                                        <button id="conf" type="submit" class="btn btn-primary">Confirm</button>
+                                    </div>
+                                </form>
+                            </td>
 
-        </div>
-
-        <div class="day">
-            <div id="monday">
-                <h2>Monday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available">
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
         </div>
-        <div class="day">
-            <div id="tuesday">
-                <h2>Tuesday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available">
-            </div>
-
-        </div>
-        <div class="day">
-            <div id="wednesday">
-                <h2>Wednesday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available">
-            </div>
-
-        </div>
-        <div class="day">
-            <div id="thursday">
-                <h2>Thursday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available">
-            </div>
-
-        </div>
-        <div class="day">
-            <div id="friday">
-                <h2>Friday</h2>
-                <input class="input is-rounded" type="text" placeholder="Hours Available">
-            </div>
-
-
-        </div>
-
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Confirm</button>
-        </div>
-        </form>
-    </div>
-    {{#if tasks.length}}
-    <div class="col-md-6 project-list">
-        <h2 class="h2">Weekly Schedule:</h3>
+        {{!--Gets the employee information and tasks--}}
+        {{#if tasks.length}}
+        <div class="col-md-6 project-list">
             {{#each tasks as |task|}}
             <div class="weekly">
                 <div class="col-md-8">
-                    <h2>{{task.title}}</h2>
-                    <p id="start-time"><b>Start Time:</b> {{task.start_time}}</p>
-                    <p id="finish-time"><b>Finish Time:</b> {{task.finish_time}}</p>
-                </div>
-                <div class="col-md-4">
-                    <button class="btn btn-sm btn-danger" data-id="{{task.id}}">DELETE</button>
+                    <div class="job-card">
+                        <div class="media-content">
+                            <h2 class="h2"><span class="fancy">F</span>ancy Restaurant</h2>
+                            <h2 class="job">{{task.title}}</h2>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/images/waiter.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left"></div>
+                            </div>
+                            <div class="content">
+                                <p>Tasks include</p>
+                                <ul>
+                                    <li>Waiting tables</li>
+                                    <li>Customer service</li>
+                                    <li>Cleaning</li>
+                                    <li>Food Preparation</li>
+                                    <li> Money Handling </li>
+                                </ul>
+                                <br>
+                                <p id="start-time"><b>Start Time:</b> {{format_date task.start_time}}</p>
+                                <p id="finish-time"><b>Finish Time:</b> {{format_date task.finish_time}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-sm btn-danger" data-id="{{task.id}}">DELETE</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             {{/each}}
+        </div>
+        {{/if}}
+        {{!--Employee enters their available hours for the week coming--}}
+
     </div>
-    {{/if}}
+
 </div>
-<script src="js/calendar.js"></script>
+
 <script src="js/employee_logout.js"></script>
+<script src="js/employee_availability.js"></script>

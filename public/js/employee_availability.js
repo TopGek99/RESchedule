@@ -1,21 +1,20 @@
 const employeeAvailabilityHandler = async (event) => {
-	// event.preventDefault();
+	event.preventDefault();
 	//Collects values from login form
-	const availability = document.querySelector(datetimepicker.data.value());
-	
-	if (!availability == 0) {
+	const availability = document.querySelector('#avail').value;
+
+	if (availability) {
 		//This sends a POST request to API endpoint
 		const response = await fetch('/api/employee/availability', {
-			method: 'POST',
+			method: 'PUT',
 			body: JSON.stringify({
-				availability: availability
+				availability: availability,
 			}),
 			headers: { 'Content-Type': 'application/json' },
 		});
 
 		if (response.ok) {
-		//If successfull will update employee availability
-			document.location.replace('/employee');
+			alert('success');
 		} else {
 			alert(response.statusText);
 			console.log(response.error);
@@ -23,20 +22,6 @@ const employeeAvailabilityHandler = async (event) => {
 	}
 };
 
-
-//For employee api route modification
-//router.post('/availability',(request, result) =>
-//{
-    //Employee.update( request.body,{
-        //individualHooks: true,
-        //where: {id: request.params.id}
-    //}).then(userData[?] => {
-     //   request.session.employee_availability = userData.availability
-     
-   // })
-
-//})
-document.$('#calendar').querySelector('.form-hours')
-	.addEventListener('submit', employeeAvailabilityHandler);
-    
-console.log(document);
+document
+	.querySelector('#conf')
+	.addEventListener('click', employeeAvailabilityHandler);
