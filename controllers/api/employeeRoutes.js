@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 const { Employee } = require('../../models');
 
 router.post('/', async (req, res) => {
@@ -17,17 +18,17 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/availability', async (req, res) => {
-	// try {
+	try {
 	const employeeData = await Employee.update(req.body, {
 		where: {
 			id: req.session.employee_id,
 		},
 	});
-
 	res.status(200).json(employeeData);
-	// } catch (err) {
-	res.status(400).json(err);
-	// }
+} catch (err){
+	res.status(400).json(err)
+}
+
 });
 
 // Login

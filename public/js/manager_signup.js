@@ -6,14 +6,14 @@ const signupManager = async (event) => {
   const lastName = qs('#manager_lastName').value.trim();
   const email = qs('#manager_email').value.trim();
   const password = qs('#manager_password').value.trim();
-  const location = qs('manager_location').value.trim();
+  const location = qs('#manager_location').value.trim();
 
 
   if (firstName && lastName && email && password && location) {
     const response = await fetch('/api/manager', {
       method: 'POST',
       body: JSON.stringify({ 
-        fist_name: firstName, 
+        first_name: firstName, 
         last_name: lastName, 
         email, 
         password, 
