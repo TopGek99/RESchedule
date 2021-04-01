@@ -10,9 +10,8 @@
 <div class="row mt-8">
 
     <div class="col-md-6">
-        <h2 class="h3">Employee Weekly Availability</h2>
-        <div class="col-md-6">
-
+            <h2 class="h3">Employee Weekly Availability</h2>
+            <div class = "totalHours">
             <table class="table" style="margin:auto">
                 <thead>
                     <tr>
@@ -35,18 +34,19 @@
                     {{/each}}
                 </tbody>
             </table>
-
+</div>
         </div>
     </div>
     {{!--Creates task for employee--}}
     <div class="col-md-6">
-        <div id="assign-task" class="has-background-warning-light">
+        <div id="assign-task" class = "assign-task">
             <form id="create_task" style="margin:auto">
                 <div class="field">
-                    <p class="is-size-3">Create Task</p>
+                    <h3 class = "h3"><span class = "fancy">C</span>reate Task</h3>
                 </div>
+                <h3 class = "h3.left">Employee </h3>
                 <div class="field">
-                    <label for="employee">Employee: </label>
+                    
                     <div class="select is-normal">
                         <select id="manager_employee">
                             {{#each employees as |employee|}}

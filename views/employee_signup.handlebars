@@ -1,7 +1,7 @@
 <div class="container">
     <div class="column is-half is-offset-one-quarter" style="background-color:grey">
         <form id="employee-signup">
-            <h2 class ="h2"><span class = "fancy">E</span>mployee <span class = "fancy">S</span>ign Up</h2>
+            <h2 class="h2"><span class="fancy">E</span>mployee <span class="fancy">S</span>ign Up</h2>
             <div class="field">
                 <label class="label">First Name:</label>
                 <div class="control">
@@ -29,7 +29,7 @@
             <div class="field">
                 <label class="label">Your manager is:</label>
                 <div class="select is-normal">
-                    <select id="employee_namager">
+                    <select id="employee_manager">
                         {{#each managers as |manager|}}
                         <option value="{{manager.id}}">{{manager.first_name}} {{manager.last_name}}</option>
                         {{/each}}
@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button id="#employee-signup" type="submit" class="btn btn-primary">Sign Up</button>
         </form>
     </div>
 </div>
