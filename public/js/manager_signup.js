@@ -45,4 +45,4 @@ const signupManager = async (event) => {
 
 document
   .querySelector("#manager-signup")
-  .addEventListener("submit", signupManager);
+  .addEventListener("click", signupManager);

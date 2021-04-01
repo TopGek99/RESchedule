@@ -48,4 +48,4 @@ const signupEmployee = async (event) => {
 
 document
   .querySelector("#employee-signup")
-  .addEventListener("submit", signupEmployee);
+  .addEventListener("click", signupEmployee);
