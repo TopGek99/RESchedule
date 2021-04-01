@@ -1,5 +1,5 @@
 const signupManager = async (event) => {
-  //   event.preventDefault();
+  event.preventDefault();
 
   const qs = document.querySelector.bind(document);
   const firstName = qs("#manager_firstName").value.trim();
@@ -45,4 +45,4 @@ const signupManager = async (event) => {
 
 document
   .querySelector("#manager-signup")
-  .addEventListener("submit", signupManager);
+  .addEventListener("click", signupManager);
