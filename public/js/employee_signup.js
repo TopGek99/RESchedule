@@ -6,7 +6,7 @@ const signupEmployee = async (event) => {
   const lastName = qs('#employee_lastName').value.trim();
   const email = qs('#employee_email').value.trim();
   const password = qs('#employee_password').value.trim();
-  const select = qs('#employee_namager')
+  const select = qs('#employee_manager')
   const managerID = select.options[select.selectedIndex].value;
 
   if (firstName && lastName && email && password && managerID) {
