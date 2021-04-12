@@ -4,7 +4,7 @@ const employeeLoginHandler = async (event) => {
 	const email = document.querySelector('#employee-email').value.trim();
 	const password = document.querySelector('#employee-password').value.trim();
 
-	console.log(email, password)
+	console.log(email, password);
 	if (email && password) {
 		//This sends a POST request to API endpoint
 		const response = await fetch('/api/employee/login', {

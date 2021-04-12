@@ -9,8 +9,7 @@ router.post('/', async (req, res) => {
 		const managerData = await Manager.create(req.body);
 
 		req.session.save(() => {
-			(req.session.employee_id = managerData.id),
-				(req.session.logged_in = true);
+			(req.session.manager_id = managerData.id), (req.session.logged_in = true);
 		});
 
 		res.status(200).json(managerData);
